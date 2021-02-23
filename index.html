@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>stpg.newtab &gt;</title>
+    <style>
+      html {
+        align-items: center;
+        background-color: #2e3440;
+        color: #d8dee9;
+        display: flex;
+        font: 22px/1 "Fira Code", monospace;
+        height: 100%;
+        justify-content: center;
+      }
+
+      body {
+        background-color: #434c5e;
+        border-radius: 2px;
+        color: #d8dee9;
+        display: flex;
+        flex-direction: column;
+        min-height: 30ch;
+        min-width: 50vw;
+        padding: 2em;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      p span {
+        color: #8fbcbb;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus,
+      a:hover {
+        font-weight: bold;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        column-gap: 2em;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 1em 0;
+      }
+
+      ul:nth-child(5n + 1) li:first-child {
+        color: #bf616a;
+      }
+
+      ul:nth-child(5n + 2) li:first-child {
+        color: #d08770;
+      }
+
+      ul:nth-child(5n + 3) li:first-child {
+        color: #ebcb8b;
+      }
+
+      ul:nth-child(5n + 4) li:first-child {
+        color: #a3be8c;
+      }
+
+      ul:nth-child(5n + 5) li:first-child {
+        color: #b48ead;
+      }
+
+      li:first-child {
+        font-weight: bold;
+      }
+
+      li:last-child {
+        margin: 0 0 1em;
+      }
+
+      p #cursor {
+        background-color: #8fbcbb;
+        animation: blink 2s infinite;
+      }
+
+      @keyframes blink {
+        0% { opacity: 0; }
+        49% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <p><span>anashi@stpg &gt; </span>newtab</p>
+
+    <nav>
+      <ul>
+        <li>general</li>
+        <li><a href="">stpg.tk</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">ff send</a></li>
+      </ul>
+    </nav>
+
+    <p><span>anashi@stpg &gt; </span> <span id="cursor">_</span></p>
+  </body>
+</html>
