@@ -6,8 +6,8 @@
     <style>
       html {
         align-items: center;
-        background-color: #2e3440;
-        color: #d8dee9;
+        background-color: #282828;
+        color: #ebdbb2;
         display: flex;
         font: 22px/1 "Fira Code", monospace;
         height: 100%;
@@ -15,9 +15,9 @@
       }
 
       body {
-        background-color: #434c5e;
+        background-color: #3c3836;
         border-radius: 2px;
-        color: #d8dee9;
+        color: #ebdbb2;
         display: flex;
         flex-direction: column;
         min-height: 30ch;
@@ -30,7 +30,7 @@
       }
 
       p span {
-        color: #8fbcbb;
+        color: #d5c4a1;
       }
 
       a {
@@ -57,23 +57,48 @@
       }
 
       ul:nth-child(5n + 1) li:first-child {
-        color: #bf616a;
+        color: #cc241d;
+        margin-bottom: 5px;
+      }
+
+      ul:nth-child(5n + 1) div {
+        background-color: #cc241d;
       }
 
       ul:nth-child(5n + 2) li:first-child {
-        color: #d08770;
+        color: #d65d0e;
+        margin-bottom: 5px;
+      }
+
+      ul:nth-child(5n + 2) div {
+        background-color: #d65d0e;
       }
 
       ul:nth-child(5n + 3) li:first-child {
-        color: #ebcb8b;
+        color: #d79921;
+        margin-bottom: 5px;
+      }
+
+      ul:nth-child(5n + 3) div {
+        background-color: #d79921;
       }
 
       ul:nth-child(5n + 4) li:first-child {
-        color: #a3be8c;
+        color: #689d6a;
+        margin-bottom: 5px;
+      }
+
+      ul:nth-child(5n + 4) div {
+        background-color: #689d6a;
       }
 
       ul:nth-child(5n + 5) li:first-child {
-        color: #b48ead;
+        color: #b16286;
+        margin-bottom: 5px;
+      }
+
+      ul:nth-child(5n + 5) div {
+        background-color: #b16286;
       }
 
       li:first-child {
@@ -84,8 +109,14 @@
         margin: 0 0 1em;
       }
 
+      .colorbox {
+        width: 30px;
+        height: 5px;
+        margin-top: 5px;
+      }
+
       p #cursor {
-        background-color: #8fbcbb;
+        background-color: #d5c4a1;
         animation: blink 2s infinite;
       }
 
@@ -105,22 +136,26 @@
         <li><a href="https://duckduckgo.com">ddg</a></li>
         <li><a href="https://www.youtube.com">youtube</a></li>
         <li><a href="https://www.reddit.com">reddit</a></li>
+        <div class="colorbox"></div>
       </ul>
       <ul>
         <li>school</li>
         <li><a href="https://classroom.google.com/u/1/h">class</a></li>
         <li><a href="https://meet.google.com/landing?authuser=1">meet</a></li>
+        <div class="colorbox"></div>
       </ul>
       <ul>
         <li>dev</li>
         <li><a href="https://www.github.com">ghub</a></li>
         <li><a href="https://www.stackoverflow.com">ohno</a></li>
         <li><a href="https://www.codecademy.com/learn">codec</a></li>
+        <div class="colorbox"></div>
       </ul>
       <ul>
         <li>why</li>
         <li><a href="https://drop.com/home">broke</a></li>
         <li><a href="https://mechanicalkeyboards.com/">;-;</a></li>
+        <div class="colorbox"></div>
       </ul>
     </nav>
 
